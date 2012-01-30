@@ -13,14 +13,18 @@
 		878B00BA14D23FF000956498 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 878B00B814D23FF000956498 /* InfoPlist.strings */; };
 		878B00BC14D23FF000956498 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B00BB14D23FF000956498 /* main.m */; };
 		878B00C014D23FF000956498 /* SMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B00BF14D23FF000956498 /* SMAppDelegate.m */; };
-		878B00C314D23FF000956498 /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B00C214D23FF000956498 /* SMViewController.m */; };
-		878B00C614D23FF000956498 /* SMViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 878B00C414D23FF000956498 /* SMViewController_iPhone.xib */; };
-		878B00C914D23FF000956498 /* SMViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 878B00C714D23FF000956498 /* SMViewController_iPad.xib */; };
 		878B00D114D23FF000956498 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878B00D014D23FF000956498 /* SenTestingKit.framework */; };
 		878B00D214D23FF000956498 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878B00AF14D23FEF00956498 /* UIKit.framework */; };
 		878B00D314D23FF000956498 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878B00B114D23FEF00956498 /* Foundation.framework */; };
 		878B00DB14D23FF000956498 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 878B00D914D23FF000956498 /* InfoPlist.strings */; };
 		878B00DE14D23FF000956498 /* SimpleTodoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B00DD14D23FF000956498 /* SimpleTodoTests.m */; };
+		878B00EA14D2404300956498 /* SMTodoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B00E814D2404300956498 /* SMTodoTableView.m */; };
+		878B00EB14D2404300956498 /* SMTodoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B00E814D2404300956498 /* SMTodoTableView.m */; };
+		878B00EC14D2404300956498 /* SMTodoTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 878B00E914D2404300956498 /* SMTodoTableView.xib */; };
+		878B00ED14D2404300956498 /* SMTodoTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 878B00E914D2404300956498 /* SMTodoTableView.xib */; };
+		878B00F014D240CD00956498 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B00EF14D240CD00956498 /* PullRefreshTableViewController.m */; };
+		878B00F114D2448E00956498 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B00EF14D240CD00956498 /* PullRefreshTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		878B00F314D244EB00956498 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878B00F214D244EB00956498 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +42,24 @@
 		878B00AF14D23FEF00956498 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		878B00B114D23FEF00956498 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		878B00B314D23FEF00956498 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		878B00B714D23FF000956498 /* SimpleTodo-Info.plist */ = {isa = PBXFileReference; path = "SimpleTodo-Info.plist"; sourceTree = "<group>"; };
+		878B00B714D23FF000956498 /* SimpleTodo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTodo-Info.plist"; sourceTree = "<group>"; };
 		878B00B914D23FF000956498 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		878B00BB14D23FF000956498 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		878B00BD14D23FF000956498 /* SimpleTodo-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleTodo-Prefix.pch"; sourceTree = "<group>"; };
-		878B00BE14D23FF000956498 /* SMAppDelegate.h */ = {isa = PBXFileReference; path = SMAppDelegate.h; sourceTree = "<group>"; };
+		878B00BD14D23FF000956498 /* SimpleTodo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTodo-Prefix.pch"; sourceTree = "<group>"; };
+		878B00BE14D23FF000956498 /* SMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAppDelegate.h; sourceTree = "<group>"; };
 		878B00BF14D23FF000956498 /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
-		878B00C114D23FF000956498 /* SMViewController.h */ = {isa = PBXFileReference; path = SMViewController.h; sourceTree = "<group>"; };
-		878B00C214D23FF000956498 /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
-		878B00C514D23FF000956498 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SMViewController_iPhone.xib; sourceTree = "<group>"; };
-		878B00C814D23FF000956498 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SMViewController_iPad.xib; sourceTree = "<group>"; };
 		878B00CF14D23FF000956498 /* SimpleTodoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTodoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		878B00D014D23FF000956498 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		878B00D814D23FF000956498 /* SimpleTodoTests-Info.plist */ = {isa = PBXFileReference; path = "SimpleTodoTests-Info.plist"; sourceTree = "<group>"; };
+		878B00D814D23FF000956498 /* SimpleTodoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTodoTests-Info.plist"; sourceTree = "<group>"; };
 		878B00DA14D23FF000956498 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		878B00DC14D23FF000956498 /* SimpleTodoTests.h */ = {isa = PBXFileReference; path = SimpleTodoTests.h; sourceTree = "<group>"; };
+		878B00DC14D23FF000956498 /* SimpleTodoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTodoTests.h; sourceTree = "<group>"; };
 		878B00DD14D23FF000956498 /* SimpleTodoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTodoTests.m; sourceTree = "<group>"; };
+		878B00E714D2404300956498 /* SMTodoTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTodoTableView.h; sourceTree = "<group>"; };
+		878B00E814D2404300956498 /* SMTodoTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTodoTableView.m; sourceTree = "<group>"; };
+		878B00E914D2404300956498 /* SMTodoTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMTodoTableView.xib; sourceTree = "<group>"; };
+		878B00EE14D240CD00956498 /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewController.h; sourceTree = "<group>"; };
+		878B00EF14D240CD00956498 /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewController.m; sourceTree = "<group>"; };
+		878B00F214D244EB00956498 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878B00F314D244EB00956498 /* QuartzCore.framework in Frameworks */,
 				878B00B014D23FEF00956498 /* UIKit.framework in Frameworks */,
 				878B00B214D23FEF00956498 /* Foundation.framework in Frameworks */,
 				878B00B414D23FEF00956498 /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +90,7 @@
 		878B00A014D23FEF00956498 = {
 			isa = PBXGroup;
 			children = (
+				878B00F214D244EB00956498 /* QuartzCore.framework */,
 				878B00B514D23FEF00956498 /* SimpleTodo */,
 				878B00D614D23FF000956498 /* SimpleTodoTests */,
 				878B00AE14D23FEF00956498 /* Frameworks */,
@@ -115,11 +123,12 @@
 			children = (
 				878B00BE14D23FF000956498 /* SMAppDelegate.h */,
 				878B00BF14D23FF000956498 /* SMAppDelegate.m */,
-				878B00C114D23FF000956498 /* SMViewController.h */,
-				878B00C214D23FF000956498 /* SMViewController.m */,
-				878B00C414D23FF000956498 /* SMViewController_iPhone.xib */,
-				878B00C714D23FF000956498 /* SMViewController_iPad.xib */,
+				878B00EE14D240CD00956498 /* PullRefreshTableViewController.h */,
+				878B00EF14D240CD00956498 /* PullRefreshTableViewController.m */,
 				878B00B614D23FF000956498 /* Supporting Files */,
+				878B00E714D2404300956498 /* SMTodoTableView.h */,
+				878B00E814D2404300956498 /* SMTodoTableView.m */,
+				878B00E914D2404300956498 /* SMTodoTableView.xib */,
 			);
 			path = SimpleTodo;
 			sourceTree = "<group>";
@@ -226,8 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				878B00BA14D23FF000956498 /* InfoPlist.strings in Resources */,
-				878B00C614D23FF000956498 /* SMViewController_iPhone.xib in Resources */,
-				878B00C914D23FF000956498 /* SMViewController_iPad.xib in Resources */,
+				878B00EC14D2404300956498 /* SMTodoTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				878B00DB14D23FF000956498 /* InfoPlist.strings in Resources */,
+				878B00ED14D2404300956498 /* SMTodoTableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878B00F114D2448E00956498 /* PullRefreshTableViewController.m in Sources */,
 				878B00BC14D23FF000956498 /* main.m in Sources */,
 				878B00C014D23FF000956498 /* SMAppDelegate.m in Sources */,
-				878B00C314D23FF000956498 /* SMViewController.m in Sources */,
+				878B00EA14D2404300956498 /* SMTodoTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				878B00DE14D23FF000956498 /* SimpleTodoTests.m in Sources */,
+				878B00EB14D2404300956498 /* SMTodoTableView.m in Sources */,
+				878B00F014D240CD00956498 /* PullRefreshTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,22 +305,6 @@
 				878B00B914D23FF000956498 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		878B00C414D23FF000956498 /* SMViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				878B00C514D23FF000956498 /* en */,
-			);
-			name = SMViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		878B00C714D23FF000956498 /* SMViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				878B00C814D23FF000956498 /* en */,
-			);
-			name = SMViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 		878B00D914D23FF000956498 /* InfoPlist.strings */ = {
@@ -444,6 +440,7 @@
 				878B00E314D23FF000956498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		878B00E414D23FF000956498 /* Build configuration list for PBXNativeTarget "SimpleTodoTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +449,7 @@
 				878B00E614D23FF000956498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

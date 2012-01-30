@@ -8,7 +8,7 @@
 
 #import "SMAppDelegate.h"
 
-#import "SMViewController.h"
+#import "SMTodoTableView.h"
 
 @implementation SMAppDelegate
 
@@ -19,11 +19,15 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    SMTodoTableView* todosVC;
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[SMViewController alloc] initWithNibName:@"SMViewController_iPhone" bundle:nil];
+        todosVC = [[SMTodoTableView alloc] initWithNibName:@"SMTodoTableView" bundle:nil];
     } else {
-        self.viewController = [[SMViewController alloc] initWithNibName:@"SMViewController_iPad" bundle:nil];
+        todosVC = [[SMTodoTableView alloc] initWithNibName:@"SMTodoTableView" bundle:nil];
     }
+    [todosVC setIsListOfLists:YES];
+
+    self.viewController = [[UINavigationController alloc] initWithRootViewController:todosVC];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class SMViewController;
+@class SMTodoTableView;
 
 @interface SMAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) SMViewController *viewController;
+@property (strong, nonatomic) UINavigationController *viewController;
 
 @end
