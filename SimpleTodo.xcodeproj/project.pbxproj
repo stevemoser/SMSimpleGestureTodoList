@@ -24,7 +24,6 @@
 		878B00ED14D2404300956498 /* SMTodoTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 878B00E914D2404300956498 /* SMTodoTableView.xib */; };
 		878B00F014D240CD00956498 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B00EF14D240CD00956498 /* PullRefreshTableViewController.m */; };
 		878B00F114D2448E00956498 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B00EF14D240CD00956498 /* PullRefreshTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		878B00F314D244EB00956498 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878B00F214D244EB00956498 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878B00F314D244EB00956498 /* QuartzCore.framework in Frameworks */,
 				878B00B014D23FEF00956498 /* UIKit.framework in Frameworks */,
 				878B00B214D23FEF00956498 /* Foundation.framework in Frameworks */,
 				878B00B414D23FEF00956498 /* CoreGraphics.framework in Frameworks */,
